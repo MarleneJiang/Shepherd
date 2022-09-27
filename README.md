@@ -50,3 +50,13 @@
 ## 使用
 
 ![](https://pic1.imgdb.cn/item/63327bcc16f2c2beb19e685f.png)
+
+```js
+        if (oSession.url=="cat-match.easygame2021.com/sheep/v1/game/map_info_ex?matchType=3") {
+            oSession.fullUrl = "http://127.0.0.1:3000/sheep/v1/game/map_info_ex?matchType=3";
+        }
+        
+        if (oSession.url.indexOf("cat-match-static.easygame2021.com/maps/")>-1){
+            oSession.fullUrl = "http://127.0.0.1:3000/public/"+oSession.url.Split("/")[2];
+        }
+```

@@ -72,7 +72,7 @@ function buildMap(mode) {
 
 // 随机生成9位随机数
 function getRandomSeed() {
-  const seed = randomInt(100000000, 999999999)
+  const seed = randomInt(0, 999999999)
   return seed
 }
 
